@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+        /* Minimal styling to make the resume readable. You can edit or remove styles. */
+        body { font-family: Arial, Helvetica, sans-serif; margin: 20px; color: #222; }
+        .container { max-width: 800px; margin: 0 auto; border: 1px solid #e0e0e0; padding: 18px; }
+        .header { text-align: center; margin-bottom: 12px; }
+        .name { font-size: 28px; font-weight: 700; }
+        .contact { font-size: 13px; color: #444; }
+        .two-col { display: flex; gap: 20px; }
+        .left { flex: 2; }
+        .right { flex: 1; }
+        .section { margin-bottom: 14px; }
+        .section-title { font-weight: 600; margin-bottom: 6px; }
+        ul { margin: 6px 0 0 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        table td, table th { border: 1px solid #ddd; padding: 6px; text-align: left; }
+        .job-title { font-weight: 600; }
+        .muted { color: #666; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name"><!-- TODO: Replace with your full name -->John Doe</div>
+            <div class="contact muted">
+                <!-- TODO: Replace with your email -->email@example.com &nbsp;|&nbsp;
+                <!-- TODO: Replace with your phone number -->+1 234 567 8901 &nbsp;|&nbsp;
+                <!-- TODO: Replace with your city/country -->City, Country
+            </div>
+            <div class="contact muted">
+                <!-- Optional: Add LinkedIn/GitHub or website -->
+                <!-- TODO: Replace with your LinkedIn -->LinkedIn: linkedin.com/in/yourname &nbsp;|&nbsp;
+                <!-- TODO: Replace with your GitHub -->GitHub: github.com/yourusername
+            </div>
+        </div>
+
+        <div class="two-col">
+            <div class="left">
+                <div class="section">
+                    <div class="section-title">Summary</div>
+                    <div>
+                        <!-- TODO: Write a short 2-4 sentence professional summary about yourself -->
+                        <p>Motivated professional with experience in [your field]. Strong skills in problem-solving, communication, and teamwork. Seeking a role where I can contribute and grow.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Experience</div>
+
+                    <div>
+                        <!-- Repeat this block for each job -->
+                        <div>
+                            <div class="job-title"><!-- TODO: Job title -->Software Engineer</div>
+                            <div class="muted"><!-- TODO: Company name and dates -->Example Company — Jan 2022 — Present</div>
+                            <ul>
+                                <!-- TODO: Add 2-4 bullets describing your responsibilities and achievements -->
+                                <li>Developed features using HTML, CSS, and JavaScript.</li>
+                                <li>Collaborated with a small team to deliver product updates monthly.</li>
+                            </ul>
+                        </div>
+                        <!-- End job block -->
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Projects</div>
+                    <ul>
+                        <!-- TODO: Add project names and short descriptions -->
+                        <li><strong>Project Name</strong> — Short description of the project and your role.</li>
+                        <li><strong>Another Project</strong> — Short description.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="section">
+                    <div class="section-title">Skills</div>
+                    <ul>
+                        <!-- TODO: Replace list items with your core skills -->
+                        <li>HTML / CSS</li>
+                        <li>JavaScript</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    <!-- Education uses a table as requested -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Institution</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><!-- TODO: Degree (e.g., B.Sc. in Computer Science) -->B.Sc. in Computer Science</td>
+                                <td><!-- TODO: Institution name -->University Name</td>
+                                <td><!-- TODO: Graduation year -->2021</td>
+                            </tr>
+                            <!-- Add more <tr> rows for additional degrees if needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Languages</div>
+                    <ul>
+                        <!-- TODO: List languages you speak and proficiency -->
+                        <li>English — Fluent</li>
+                        <li>Spanish — Intermediate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin-top:12px; font-size:12px; color:#777;">
+            <!-- Small footer: you may remove if you want -->
+            Generated with a simple template — edit the fields marked with TODO comments to add your details.
+        </div>
+    </div>
+</body>
+</html>
