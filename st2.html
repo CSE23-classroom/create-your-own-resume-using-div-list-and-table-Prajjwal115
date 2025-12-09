@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Product Card</title>
+  
+</head>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f2f2f2;
+}
+
+.title { text-align: center; margin-bottom: 25px; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #27ae60;
+  margin-top: 8px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+  <h1 class="title">Responsive Product Cards</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="t-shirt.jpg" alt="headphones">
+      <h3>Headphones</h3>
+      <p>For daily use.</p>
+      <p class="price">₹2500</p>
+    </div>
+
+    <div class="card">
+      <img src="protein.jpg" alt="Goggles">
+      <h3>Goggles</h3>
+      <p>UV ray protection</p>
+      <p class="price">₹2,999</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
