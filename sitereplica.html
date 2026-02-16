@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Clone</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(196, 127, 10);
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 400px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #cf8920;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #232f3e;
+    padding: 10px 40px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a') no-repeat center center/cover;
+    height: 300px;
+}
+
+/* Product Grid */
+.products {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #b12704;
+    font-weight: bold;
+}
+
+.product-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ffd814;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+}
+
+.product-card a:hover {
+    background-color: #f7ca00;
+}
+
+/* Footer */
+footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Amazon</div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search products">
+        <button>Search</button>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Home</li>
+        <li>Books</li>
+        <li>Deals</li>
+    </ul>
+</nav>
+
+<div class="hero"></div>
+
+<section class="products">
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+        <h3>Laptop Pro 15"</h3>
+        <p>$999</p>
+        <a href="https://www.amazon.com" target="_blank">View Product</a>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Smartphone">
+        <h3>Smartphone X</h3>
+        <p>$799</p>
+        <a href="https://www.amazon.com" target="_blank">View Product</a>
+    </div>
+
+    <div class="product-card">
+        <img src="https://shop.zebronics.com/cdn/shop/files/Zeb-Duke-pic-1.jpg?v=1710569970&width=1200" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>$199</p>
+        <a href="https://www.amazon.com" target="_blank">View Product</a>
+    </div>
+
+    <div class="product-card">
+        <img src="https://www.campusshoes.com/cdn/shop/files/FUNK_FUNK_WHITE-C.BLUE_07_43dc8d41-2970-4997-bdaa-3ec1197fbfce.webp?v=1757921352" alt="Shoes">
+        <h3>Running Shoes</h3>
+        <p>$120</p>
+        <a href="https://www.amazon.com" target="_blank">View Product</a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Amazon clone. All rights reserved.
+</footer>
+
+</body>
+</html>
